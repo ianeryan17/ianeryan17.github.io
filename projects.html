@@ -29,11 +29,33 @@
     h1, h2, h3 {
       color: #2c3e50;
     }
-    .project {
-      margin-bottom: 1.5rem;
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
-    .project p {
-      margin: 0.2rem 0 0 0;
+
+    .project-card {
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 1.2rem;
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    .project-card p {
+      margin: 0.5rem 0 0;
       color: #555;
     }
   </style>
@@ -50,53 +72,59 @@
 
   <h3>CS40</h3>
 
-  <div class="project">
-    <h3><a href="https://github.com/ianeryan17/cs40_filesofpix" target="_blank">Filesofpix HW Assignment</a></h3>
-    <p>Image file memory structure exploration.</p>
+  <div class="project-list">
+    <div class="project-card">
+      <h3><a href="https://github.com/ianeryan17/cs40_filesofpix" target="_blank">Filesofpix HW Assignment</a></h3>
+      <p>Image file memory structure exploration.</p>
+    </div>
   </div>
 
-  <div class="project">
+  <div class="project-card">
     <h3><a href="https://github.com/ianeryan17/cs40_iii" target="_blank">III HW Assignment</a></h3>
     <p>Simulates instruction interpretation.</p>
   </div>
 
-  <div class="project">
+  <div class="project-card">
     <h3><a href="https://github.com/ianeryan17/cs40_um" target="_blank">Universal Machine</a></h3>
     <p>Implements a UM emulator with segmented memory.</p>
   </div>
 
-  <div class="project">
+  <div class="project-card">
     <h3><a href="https://github.com/ianeryan17/cs40_hw7" target="_blank">Lambda Calculus Assignment</a></h3>
     <p>Evaluates expressions using closures and environments.</p>
   </div>
 
-  <div class="project">
+  <div class="project-card">
     <h3><a href="https://github.com/ianeryan17/cs40_hw8" target="_blank">Stack-Based Calculator</a></h3>
     <p>Calculator using postfix evaluation and stacks.</p>
   </div>
 
   <h3>CS15</h3>
 
-  <div class="project">
-    <h3><a href="https://github.com/ianeryan17/gerp" target="_blank">Gerp</a></h3>
-    <p>A recursive grep-like search tool.</p>
+  <div class="project-list">
+    <div class="project-card">
+      <h3><a href="https://github.com/ianeryan17/gerp" target="_blank">Gerp</a></h3>
+      <p>A recursive grep-like search tool.</p>
+    </div>
   </div>
 
   <h2>Ceelo Dice Variations</h2>
 
-  <div class="project">
-    <h3><a href="https://github.com/ianeryan17/CeeloDiceReact" target="_blank">Ceelo Dice Game in React</a></h3>
-    <p>Frontend version of Ceelo Dice Game built using React.</p>
-  </div>
+  <div class="project-list">
+    <div class="project-card">
+      <h3><a href="https://github.com/ianeryan17/CeeloDiceReact" target="_blank">Ceelo Dice Game in React</a></h3>
+      <p>Frontend version of Ceelo Dice Game built using React.</p>
+    </div>
+      
+    <div class="project-card">
+      <h3><a href="https://github.com/ianeryan17/CeeloDicev2" target="_blank">Ceelo Dice Game in TypeScript</a></h3>
+      <p>TypeScript version with improved type safety and structure.</p>
+    </div>
 
-  <div class="project">
-    <h3><a href="https://github.com/ianeryan17/CeeloDicev2" target="_blank">Ceelo Dice Game in TypeScript</a></h3>
-    <p>TypeScript version with improved type safety and structure.</p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/ianeryan17/Cee-loDiceUnity" target="_blank">Ceelo Dice Game in Unity (C#)</a></h3>
-    <p>3D dice rolling game built with Unity and C#.</p>
+    <div class="project-card">
+      <h3><a href="https://github.com/ianeryan17/Cee-loDiceUnity" target="_blank">Ceelo Dice Game in Unity (C#)</a></h3>
+      <p>3D dice rolling game built with Unity and C#.</p>
+    </div>
   </div>
 
 </body>
